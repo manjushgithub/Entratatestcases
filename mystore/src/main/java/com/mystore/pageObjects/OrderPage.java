@@ -45,7 +45,7 @@ public class OrderPage extends BaseClass {
 	}
 	public LoginPage clickOnCheckOut() throws Throwable {
 		Action.click(driver, proceedtocheout);
-		Action.fluentWait(driver, proceedtocheout, 1);
+		Action.fluentWait(driver, proceedtocheout, 10);
 		return new LoginPage();
 	}
 	

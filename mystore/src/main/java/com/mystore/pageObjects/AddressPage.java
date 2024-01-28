@@ -17,7 +17,7 @@ import com.mystorte.base.BaseClass;
 public class AddressPage extends BaseClass {
 	static Action Action=new Action();
 	
-	@FindBy(xpath="//span[text()=\"Proceed to checkout\"]")
+	@FindBy(xpath="//button[@name='processAddress']//span[contains(text(),'Proceed to checkout')]")
 	WebElement proceedtocheout;
 	
 	public AddressPage()
@@ -29,6 +29,7 @@ public class AddressPage extends BaseClass {
 	public ShippingPage clickoncheckout()
 	{
 		Action.click(driver, proceedtocheout);
+		Action.fluentWait(driver, proceedtocheout, 15);
 		return new ShippingPage();
 	}
 

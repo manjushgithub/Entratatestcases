@@ -17,10 +17,10 @@ import com.mystorte.base.BaseClass;
 public class ShippingPage extends BaseClass {
 	static Action Action=new Action();
 	
-	@FindBy(id="cgv")
+	@FindBy(xpath="//input[@type=\"checkbox\"]")
 	WebElement terms;
 	
-	@FindBy(xpath="//span[contains(text(),'Proceed to checkout')]")
+	@FindBy(xpath="//button[@name='processCarrier']//span[contains(text(),'Proceed to checkout')]")
 	WebElement proceedToCheckOutBtn;
 	
 	public ShippingPage()
@@ -31,12 +31,15 @@ public class ShippingPage extends BaseClass {
 	
 	public void clickoncheckbox()
 	{
+		Action.fluentWait(driver, terms, 15);
 		Action.click(driver, terms);
 	}
 	
-	public PaymentPage clickonproceedrochecjout()
+	public PaymentPage clickonproceedrochecjout() throws InterruptedException
 	{
+	Thread.sleep(1000);
 		Action.click(driver, proceedToCheckOutBtn);
+		Action.fluentWait(driver, terms, 20);
 		return new PaymentPage();
 	}
 

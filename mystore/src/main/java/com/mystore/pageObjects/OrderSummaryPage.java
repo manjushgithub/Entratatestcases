@@ -25,7 +25,9 @@ private WebElement confirmOrderBtn;
 	}
 
 	public OrderConfirmationPage clickOnconfirmOrderBtn() throws Throwable {
+		
 		Action.click(driver, confirmOrderBtn);
+		Action.fluentWait(driver, confirmOrderBtn, 10);
 		return new OrderConfirmationPage();
 	}
 	

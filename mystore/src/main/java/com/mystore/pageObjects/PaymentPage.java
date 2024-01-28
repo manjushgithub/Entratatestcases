@@ -29,6 +29,7 @@ public class PaymentPage extends BaseClass {
 	
 	public OrderSummaryPage clickOnPaymentMethod() throws Throwable {
 		Action.click(driver, bankwiremethod);
+		Action.fluentWait(driver, bankwiremethod, 10);
 		return new OrderSummaryPage();
 	}
 

@@ -47,12 +47,13 @@ public class LoginPage extends BaseClass {
 		return new HomePage();
 	}
 	public AddressPage login1(String uname,String pswd) throws InterruptedException//this is flow when user
-	//directly search the prodcut and order it then he has to sign in again move to address page(this is come from order page 
+	//directly search the prodcuts and order it then he has to sign in again move to address page(this is come from order page 
 	{
 		Action.type(userName, uname);
 		Action.type(password, pswd);
-		//Action.fluentWait(driver, signInButton, 10);
+	
 		Action.click(driver, signInButton);
+		Action.fluentWait(driver, signInButton, 10);
 		
 		return new AddressPage();
 	}

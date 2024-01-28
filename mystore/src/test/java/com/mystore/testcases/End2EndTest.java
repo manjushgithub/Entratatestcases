@@ -61,6 +61,7 @@ public class End2EndTest  extends BaseClass {
 		orderpage=addTocartpage.clickoncheckout();
 		//Thread.sleep(1000);
 		loginpage=orderpage.clickOnCheckOut();
+		
 		addresspage=loginpage.login1(prop.getProperty("username"), prop.getProperty("password"));
 		shippingpage=addresspage.clickoncheckout();
 		shippingpage.clickoncheckbox();
@@ -68,7 +69,7 @@ public class End2EndTest  extends BaseClass {
 		orderSummaryPage=paymentpage.clickOnPaymentMethod();
 		orderconfirmationpage=orderSummaryPage.clickOnconfirmOrderBtn();
 		String actualmsg=orderconfirmationpage.validatemsg();
-		String exp="Your order on My Store is complete.";
+		String exp="Your order on My Shop is complete.";
 		Assert.assertEquals(actualmsg, exp);
 	}
 
