@@ -7,9 +7,8 @@
         <methods>
           <include name="loadcofig"/>
           <include name="setup"/>
+          <include name="verifyLogo"/>
           <include name="teardown"/>
-          <include name="displ"/>
-          <include name="solutionslinksworking"/>
         </methods>
       </class> <!-- entrata.homepagetest -->
     </classes>
