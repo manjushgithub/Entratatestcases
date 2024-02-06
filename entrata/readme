@@ -1,0 +1,16 @@
+
+Test scenarios:  
+
+1)validate the logo of entrata site
+step:launch the browser
+open the entrata site url through calling config file.
+validate logo of entrata site on home page through assert true.
+
+2)validate the mydemobutton functionality
+
+navigate from home page to demopage
+1st validation title of demo page
+2nd validation watch button demo is enabled or not.
+
+3)
+
