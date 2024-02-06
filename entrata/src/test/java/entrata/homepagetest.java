@@ -41,31 +41,6 @@ public class homepagetest extends BaseClass {
 		System.out.println("test case home passed-1");
 	}
 	
-//	@Test
-//	public void displ() throws InterruptedException
-//			{
-//		homepageobj=new homepage();
-//		boolean ans=homepageobj.elementvisible();
-//		Assert.assertTrue(ans);
-//		System.out.println("firstrun");
-//			}
-//	@Test
-//	public void solutionslinksworking() {
-//        ArrayList<WebElement> search = homepageobj.links();
-//        int links = search.size();
-//        List<WebElement> link;
-//        System.out.println("Number of links: " + links);
-//        
-//        for (WebElement el : search) {
-//            System.out.println(el.getText());
-//        }
-//        
-//        for (int i = 0; i < links; i++) {
-//            link = driver.findElements(By.xpath("//div[@class='header-drop-nav']//a[@class='fat-nav-links']"));
-//            WebElement url = link.get(i);
-//            url.click();
-//            driver.navigate().back();
-//        }
-//	}
+
 
 }

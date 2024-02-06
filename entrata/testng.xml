@@ -3,8 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="entrata.homepagetest"/>
+      <class name="entrata.residentaltest"/>
       <class name="entrata.demotest"/>
+      <class name="entrata.SignInTest"/>
+      <class name="entrata.homepagetest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
