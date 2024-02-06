@@ -43,6 +43,7 @@ public class SignInTest extends BaseClass {
 		Assert.assertEquals(text, exp);
 		System.out.println("2nd case of sign-in page");	
 	}
+	@Test
 	public void residentbuttontest()
 	{
 		homepageobj=new homepage();
@@ -51,7 +52,7 @@ public class SignInTest extends BaseClass {
 		Assert.assertTrue(proprty);
 		System.out.println("3rd case of sign-in page");	
 		String text=signinpageobj.titletextresident();
-		String exp="Resident Login";
+		String exp="Resident Login .link-arrow-dark{fill:#262626;}";
 		Assert.assertEquals(text, exp);
 		System.out.println("4th case of sign-in page");	
 	}
