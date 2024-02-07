@@ -56,5 +56,5 @@ public class SignInTest extends BaseClass {
 		Assert.assertEquals(text, exp);
 		System.out.println("4th case of sign-in page");	
 	}
-
 }
+

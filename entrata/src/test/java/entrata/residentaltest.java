@@ -42,18 +42,4 @@ public class residentaltest extends BaseClass {
 
 	}
 }
-//	@Test
-//	public void residentialbuttontest()
-//	{
-//		homepageobj=new homepage();
-//		signinpageobj=homepageobj.signbutton();
-//		residentalpageobj=signinpageobj.clickresiden();
-//		String ans=residentalpageobj.;
-//		String exp="Welcome to\r\n" + 
-//				"Resident"
-//				+ "P"
-//				+ "ortal";
-//		Assert.assertEquals(ans, exp);
-//		System.out.println("secondcaseofresidency");
-//
-//}}
+

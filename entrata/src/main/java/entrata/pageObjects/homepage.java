@@ -49,22 +49,4 @@ public class homepage extends BaseClass {
 		action.JSClick(driver, signinlink);
 		return new signinpage();
 	}
-	
-//	public boolean elementvisible() throws InterruptedException
-//			{
-//		Thread.sleep(10000);
-//		return action.moveToElement(driver, solutionsover);
-//			}
-//	
-//	public ArrayList<WebElement> links()
-//	{
-//		ArrayList<WebElement> links=new ArrayList<>();
-//		action.mouseHoverByJavaScript(solutionsover, driver);
-//		action.fluentWait(driver, alllinks, 20);
-//		List<WebElement> search=driver.findElements(By.xpath("//div[@class='header-drop-nav']//a[@class='fat-nav-links']"));
-//		return (ArrayList<WebElement>) search;
-//	}
-	
-	
-
 }

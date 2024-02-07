@@ -50,4 +50,3 @@ public class signinpage extends BaseClass  {
 	 return new residentalpage();
 	}
 }
-

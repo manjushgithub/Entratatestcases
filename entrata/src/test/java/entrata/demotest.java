@@ -41,7 +41,7 @@ public class demotest extends BaseClass {
 		AssertJUnit.assertEquals(op, Expectedmsg);
 		System.out.println("test case demo passed-2");
 	}
-	
+
 	@Test
 	public void displaybutonwatchdemo()
 	{

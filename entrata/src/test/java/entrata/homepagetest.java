@@ -39,8 +39,5 @@ public class homepagetest extends BaseClass {
 		boolean result=homepageobj.validateLogo();
 		AssertJUnit.assertTrue(result);
 		System.out.println("test case home passed-1");
-	}
-	
-
-
+}
 }
