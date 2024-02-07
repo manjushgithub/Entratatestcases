@@ -6,7 +6,7 @@
       <class name="entrata.homepagetest"/>
       <class name="entrata.demotest"/>
       <class name="entrata.SignInTest"/>
-         <class name="entrata.residentaltest"/>
+         <class name="entrata.residentaltest  "/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
